@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   <style>
+       #main{
+           margin-top: 0px;
+    width: 100%;
+    height: 600px;
+   
+    display: grid;
+    place-items: center;
+}
+ #main #sub{
+     width: 80%;
+     height: 500px;
+    display: flex;
+  
+}
+    #half{
+    width: 25%;
+    height: 600px;
+    background: #fff;
+    margin-right: 2%;
+    border-radius: 30px;
+    border:3px solid black;
+    box-shadow: 10px 10px 5px black; 
+} 
+   #quater{
+    color:#000;
+    width: 73%;
+    height: 600px;
+    background:#fff;
+    border-radius: 30px;
+    border:3px solid red;
+    box-shadow: 10px 10px 5px red; 
+} 
+#half img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 40px;
+    animation: type1 4s infinite;
+}
+@keyframes type1{
+    0%{
+       transform: rotate(0deg);
+      
+    }
+    20%{
+        transform: rotate(60deg);
+      
+    }
+    40%{
+        transform: rotate(120deg);
+      
+    } 
+    60%{
+        transform: rotate(180deg);
+      
+    }
+    80%{
+        transform: rotate(240deg);
+       
+    }
+    100%{
+        transform: rotate(360deg);
+      
+    }
+}
+#half h3{
+    width: 80%;
+    color: #000;
+    margin-left: 20px;
+  
+    text-align: center;
+    font-size: 25px;
+   
+   
+}
+span{
+    font-weight: 200;
+}
+#half h2{
+    color: #000;
+    font-size: 20px;
+    background: gray;
+    width: 80%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#icon{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+ #half #icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+    border: 2px solid red;
+}
+#icon a{
+    margin: 5px;
+    text-decoration: none;
+   
+}
+
+ #add{
+     color: #fff;
+     background: gray;
+     width: 90%;
+     border-radius: 20px;
+     height: 150px;
+     margin-left: 10px;
+     margin-top: 20px;
+     /* text-align: center; */
+    
+ }
+ #add h4{
+  font-size: 17px;
+ }
+ #add a{
+     font-size: 20px;
+     text-decoration: none;
+     color: #fff;
+ }
+ #half p {
+     color: #000;
+     margin-left: 50px;
+     margin-top: 20px;
+     width: 50%;
+     text-align: center;
+     background: green;
+     padding: 10px;
+     border-radius: 20px;
+ }
+ #quater h2{
+     width: 200px;
+     padding: 20px;
+     padding-bottom: 5px;
+     border-bottom: 4px solid green;
+ }
+ #bio{
+     margin-top: 20px;
+     padding: 5px;
+ }
+ #bio h2{
+     width: 100%;
+     background: gray;
+     text-align: center;
+     border: none;
+     color: #Fff;
+     padding: 0;
+ }
+ #exp{
+     /* margin-left: 20px; */
+     width: 98%;
+     height: 280px;
+     background: gray;
+   
+     margin: auto;
+     display: grid;
+ 
+    grid-template-rows: repeat(2,100px);
+    grid-template-columns: repeat(2,320px);
+    grid-gap: 10px; 
+ }
+ #web{
+     background: #000;
+ }
+ #res{
+     background: red;
+ }
+ #html{
+     background: yellow;
+     
+ }
+ #git{
+     background: green;
+ }
+ #con{
+     width: 100%;
+     height: 600px;
+     display: grid;
+     place-items:center;
+ }
+ #cont{
+     width: 70%;
+     height: 400px;
+     background-color: #ffff;
+     border-radius: 20px;
+     margin-top: 0;
+ }
+ #sosical{
+     /* width: 45%; */
+     margin-left: 30px;
+     margin-top: 40px;
+ }
+ 
+ #sosical a {
+     /* width: 200px;
+     height: 100px; */
+     margin-top: 10px;
+     text-decoration: none;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 30px;
+     margin-left: 10px;
+ }
+ #sosical a:hover{
+     background: red;
+     color: #fff;
+ }
+ 
+ @media(max-width:700px){
+  #buttoncontainer{
+      width: 100%;
+      display: flex;
+    background: red;
+  }
+  #tabcontainer #buttoncontainer button{
+     width: 40%;
+     padding:  10px;
+     text-align: center;
+     display: flex;
+      background-color: red;
+  }
+  #tabpannel #main #sub{
+      display: block;
+      /* width: 100%;
+      display: grid;
+      place-items: center; */
+  }
+  #tabpannel #main #sub #half{
+      width: 80%;
+     margin-left: 20px;
+  }
+  #tabpannel #main #sub #half img{
+      margin-left: 60px;
+  }
+  #tabpannel #main #sub #half #icon{
+      margin-left: 20px;
+  }
+  #tabpannel #main #sub #half #icon img{
+      margin-left: 10px;
+  }
+ #quater{
+     width: 80%;
+     margin-left: 30px;
+     margin-top: 20px;
+ }
+  #quater #exp {
+      
+     
+     display: none;
+    
+ } 
+
+}
+   </style>
+</head>
+<body>
+    <div id="tabcontainer">
+        <div id="buttoncontainer">
+            <button onclick="showpannel(0,'#000')" id="b1">Home</button>
+            <button onclick="showpannel(1,'#4caf50')">About</button>
+            <button onclick="showpannel(2,'#2169f3')">Contact</button>
+           </div>
+           <div id="tabpannel">
+               <div id="container">
+                   <div id="detalis">
+                       <h1> Web Developer Bipin Kumar.</h1><br>
+                       <h4>I,m Bipin Kumar,a web Developer<br> and  web Designer 
+                    in Bihar,India</h4></div>
+                   <div id="profile">
+                       <img src="img/bipin.jpg" alt="" srcset="">
+                   </div>
+               </div>
+           </div>
+           <div id="tabpannel">
+               <div id="main">
+                   <div id="sub">
+                   <div id="half">
+                       <img src="img/bipin.jpg" alt=""><br>
+                       <h3><span>Developer</span>Bipin</h3>
+                       <h2>Web Developer</h2>
+                       <div id="icon">
+                       <a href=""> <img src="img/icon/f2.png" alt=""> </a>
+                       <a href=""> <img src="img/icon/ins.png" alt=""> </a>
+                       <a href=""> <img src="img/icon/tw.png" alt=""> </a>
+                       <a href=""> <img src="img/icon/ty.png" alt=""> </a>
+                    </div>
+                    <div id="add">
+                        <h4>September 12,2020</h4>
+                       <a href="">Ara(Bihar)</a><br>
+                        <a href="">Github</a> 
+                    </div>
+                    <p>Email Me</h>
+                   </div>
+                   <div id="quater">
+                       <h2>About</h2>
+                       <div id="bio">
+                           <p>I'am a web designer and front end devloper and back end devloper from Ara,Bihar. who loves design and internet sphere.</p>
+                           <h5>My name is Bipin Kumar,I am 17 years old. I belong to middle class family. I live in India.</h5>
+                           <h2>As for as my qualification is concered.</h2>
+                           <p>I have passed 10th from Bihar Bord. I am pursuing 12th from H.N.K Inter College Ara(Bihar). I have also done Web devlopement course in 2019.
+
+                          </p>
+                       </div>
+                       <div id="exp">
+                           <div id="web">
+                               <h4>Web devlopment</h4>
+                               <p>Able to creat beautiful sites by using HTML,CSS,JS</p>
+                           </div>
+                           <div id="html">
+                               <h4>HTML devlopment</h4>
+                               <p>Able to create HTML EMAAS quickly and effective.</p>
+                           </div>
+                           <div id="res">
+                               <h4>Responsive design</h4>
+                               <p>Able to create mobile responsive sites at a professional level.</p>
+                           </div>
+                           <div id="git"></div>
+                       </div>
+                   </div>
+                </div>
+              </div>
+           </div>
+               <div id="tabpannel">
+               <div id="con">
+                   <div id="cont">
+                       <div id="sosical">
+                        <a href="" id="fe">Facebook </a>
+                        <a href="" id="ins">Instagram </a>
+                        <a href="" id="tw">Twitter  </a>
+                        <a href="" id="yu">Youtube </a>
+                       </div>
+                       <div id="content11">
+    this
+                       </div>
+                   </div>
+               </div>
+           </div>
+    </div>
+    <script>
+        var button = document.querySelectorAll("#tabcontainer #buttoncontainer button");
+        var tab = document.querySelectorAll("#tabcontainer #tabpannel");
+        function showpannel(pannelindex,colorcode){
+        button.forEach(function(node){
+              node.style.backgroundColor="";
+              node.style.color="";
+            });
+            button[pannelindex].style.backgroundColor=colorcode;
+            button[pannelindex].style.color="white";
+            tab.forEach(function(node){
+              node.style.display="none";
+            
+            });
+          tab[pannelindex].style.display="block";
+          tab[pannelindex].style.backgroundColor=colorcode;
+
+        }
+    </script>
+</body>
+</html>
